@@ -38,10 +38,10 @@ export default defineConfig({
     headless:false,
     screenshot:'only-on-failure',
     video:'retain-on-failure',
-    trace: 'on'
+    trace: 'off'
   },
 
-  /* Configure projects for major browsers */
+  /* Configure projects for major browsers 
   projects: [
     {
       name: 'chromium',
@@ -77,7 +77,8 @@ export default defineConfig({
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+//  ],
+
 
   /* Run your local dev server before starting the tests */
   // webServer: {
