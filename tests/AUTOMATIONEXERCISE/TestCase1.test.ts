@@ -9,7 +9,7 @@ test("Resgister User",async()=>{
 
     await page.goto("https://automationexercise.com/login");
     await page.getByPlaceholder('Name').fill('Vithyak');
-    await page.locator('[data-qa="signup-email"]').fill('vithyak1431435464@gmail.com');
+    await page.locator('[data-qa="signup-email"]').fill('vithyakm09@gmail.com');
     await page.getByRole('button',{name:'Signup'}).click();
     
 
@@ -31,6 +31,7 @@ test("Resgister User",async()=>{
     await page.locator('[data-qa="mobile_number"]').fill('9876543219');
 
     await page.getByRole('button',{name:'Create Account'}).click();
-
+    await expect(page.getByText('Account Created!')).toBeVisible();
 }
 )
+
