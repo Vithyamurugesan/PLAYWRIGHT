@@ -1,0 +1,10 @@
+number of pages: 3
+-------------
+URL: https://demoqa.com/browser-windows
+title: demosite
+-------------
+URL: https://demoqa.com/sample
+title: 
+-------------
+URL: https://demoqa.com/sample
+title: 
