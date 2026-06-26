@@ -9,7 +9,7 @@ test('Login User', async ({ page }) => {
   await page.getByRole('link', { name: ' Signup / Login' }).click();
   await expect(page.getByRole('link', { name: 'Website for automation' })).toBeVisible();
 
- await page.locator('input[data-qa="login-email"]').fill('vithyakm0998@gmail.com');
+  await page.locator('input[data-qa="login-email"]').fill('vithyakm0998@gmail.com');
   await page.getByRole('textbox', { name: 'Password' }).click();
   await page.getByRole('textbox', { name: 'Password' }).fill('12345678');
   await page.getByRole('button', { name: 'Login' }).click();
