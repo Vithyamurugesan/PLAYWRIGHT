@@ -1,6 +1,6 @@
 import { chromium, test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Login User', async ({ page }) => {
     const browser = await chromium.launch({
         headless: false
     });
