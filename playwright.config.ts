@@ -13,6 +13,8 @@ dotenv.config({ path:`./env/.env.${envName}`});
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  //timeout: 10000,
+
   testDir: './tests',
   //repeatEach:3,
 
@@ -39,12 +41,13 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-
+    
     browserName:'chromium',
     headless:false,
     screenshot:'only-on-failure',
     video:'retain-on-failure',
-    trace: 'off'
+    trace: 'off',
+    actionTimeout: 5000,
   },
 
   /* Configure projects for major browsers 
